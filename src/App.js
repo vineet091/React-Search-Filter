@@ -23,7 +23,7 @@ export default function App() {
   const filterData = (value) => {
     console.log(value);
     var newFilterData = DATA.filter((item) => {
-      if (item.indexOf(value) > -1) {
+      if (item.includes(value)) {
         return true;
       }
       return false;
